@@ -23,18 +23,8 @@ header .wrapper-1 .navlist a {
   color: #a7a6a6;
   font-size: 1rem;
 }
-header .wrapper-1 .navlist a:hover {
+header .wrapper-1 .navlist a:hover, header .wrapper-1 .navlist a.selected {
   color: #ffffff;
-}
-header .wrapper-1 .navlist .btn {
-  height: 3em;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-}
-header .wrapper-1 .navlist .btn:hover {
-  background: rgba(255, 255, 255, 0.0666666667);
 }
 
 /*# sourceMappingURL=navbar.css.map */
