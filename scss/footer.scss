@@ -1,0 +1,65 @@
+@import "./colors";
+@import "./utils";
+
+footer {
+  background: $bg;
+  color: $text-1;
+
+  .wrapper-1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1.2fr;
+    gap: 3em;
+
+    padding: 2.25em min(5.75em, 6.4vw);
+
+    p {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .footer-about {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      img {
+        width: 5rem;
+      }
+
+      p {
+        font-weight: normal;
+        max-width: 22ch;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      margin-block-start: 0.5em;
+
+      &.social-media {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        a {
+          border-radius: 50%;
+          color: $text-4;
+
+          &:hover {
+            color: $text-1;
+          }
+        }
+      }
+
+      a {
+        font-size: 0.75rem;
+        color: $text-4;
+        text-decoration: none;
+
+        &:hover {
+          color: $text-1;
+        }
+      }
+    }
+  }
+}

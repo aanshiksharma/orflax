@@ -9,19 +9,123 @@
   padding: 0;
   margin: 0;
   background: none;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 200ms ease;
   cursor: pointer;
+}
+
+.color-cta {
+  color: #ffc812;
+}
+
+.color-dark {
+  color: #000000;
+}
+
+h2 {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+  align-content: center;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-gutter: stable;
 }
 
 body {
   line-height: 1.36;
   font-family: "Open Sans", Inter, Roboto, sans-serif;
-  background: #000000;
+}
+
+.hero {
+  position: relative;
+  min-height: 40rem;
+  color: #ffffff;
+  padding-inline: min(5.75em, 6.4vw);
+}
+.hero .hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+  z-index: -1;
+}
+.hero > div {
+  display: grid;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40rem;
+}
+.hero > div .hero-text p {
+  margin-block: 2.25rem 2rem;
+  max-width: 44ch;
+}
+.hero > div .buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+.hero > div .buttons .btn {
+  border: 1px solid #ffc812;
+  border-radius: 1.25em;
+  padding: 0.5em 1em;
+  background: #ffc812;
+  color: #000000;
+  font-weight: 500;
+}
+.hero > div .buttons .btn:nth-child(2) {
+  background: transparent;
+  color: #ffc812;
+}
+.hero > div .buttons .btn:hover {
+  background: #947100;
+  color: #ffffff;
+  border-color: #947100;
+}
+
+.about {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 2fr 3fr;
+  gap: 1em;
+  padding: 5em min(5.75em, 6.4vw);
+}
+.about .left {
+  display: grid;
+  gap: 1em;
+  padding: 1em;
+}
+.about .left p {
+  color: #6c6c6d;
+}
+.about .right video {
+  width: 100%;
+  border-radius: 2.25em;
 }
 
 /*# sourceMappingURL=home.css.map */

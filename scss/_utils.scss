@@ -1,3 +1,5 @@
+@import "./colors";
+
 .wrapper-1 {
   max-width: 1440px;
   margin-inline: auto;
@@ -9,6 +11,42 @@
   padding: 0;
   margin: 0;
   background: none;
+  color: $text-1;
+  text-decoration: none;
+  font-size: 1rem;
 
+  transition: 200ms ease;
   cursor: pointer;
+}
+
+.color-cta {
+  color: $cta;
+}
+
+.color-dark {
+  color: $text-3;
+}
+
+h2 {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+  align-content: center;
 }
