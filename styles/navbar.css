@@ -1,0 +1,40 @@
+header {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.2196078431);
+  backdrop-filter: blur(30px);
+  font-size: 1rem;
+  position: fixed;
+  inset: 0 0 auto 0;
+}
+header .wrapper-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3em min(5.75em, 6.4vw);
+}
+header .wrapper-1 .navlist {
+  display: flex;
+  align-items: center;
+  gap: min(3.5em, 3.9vw);
+  list-style-type: none;
+}
+header .wrapper-1 .navlist a {
+  text-decoration: none;
+  color: #a7a6a6;
+  font-size: 1rem;
+}
+header .wrapper-1 .navlist a:hover {
+  color: #ffffff;
+}
+header .wrapper-1 .navlist .btn {
+  height: 3em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+header .wrapper-1 .navlist .btn:hover {
+  background: rgba(255, 255, 255, 0.0666666667);
+}
+
+/*# sourceMappingURL=navbar.css.map */
