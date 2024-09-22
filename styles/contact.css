@@ -12,36 +12,34 @@ background: white;
 }
 
 header {
-    color: #000000;
-    background: rgba(46, 46, 46, 0.22);
-    backdrop-filter: blur(30px);
-    font-size: 1rem;
-    position: fixed;
-    inset: 0 0 auto 0;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.3647058824);
+  backdrop-filter: blur(17px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1019607843);
+  font-size: 1rem;
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 999;
 }
-  
 header .wrapper-1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.3em min(5.75em, 6.4vw);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3em min(5.75em, 6.4vw);
 }
-
-  header .wrapper-1 .navlist {
-    display: flex;
-    align-items: center;
-    gap: min(3.5em, 3.9vw);
-    list-style-type: none;
-  }
-  
+header .wrapper-1 .navlist {
+  display: flex;
+  align-items: center;
+  gap: min(3.5em, 3.9vw);
+  list-style-type: none;
+}
 header .wrapper-1 .navlist a {
-    text-decoration: none;
-    color: #fffefe;
-    font-size: 1rem;
+  text-decoration: none;
+  color: #cecece;
+  font-size: 1rem;
 }
-
 header .wrapper-1 .navlist a:hover, header .wrapper-1 .navlist a.selected {
-    color: #000000;
+  color: #ffffff;
 }
 
 /* Main container styling */

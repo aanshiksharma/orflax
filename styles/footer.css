@@ -99,4 +99,45 @@
     color: #ffffff;
   }
   
-  /*# sourceMappingURL=footer.css.map */
+  /* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+
+  footer .wrapper-1 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  footer .wrapper-1 > * {
+    margin-bottom: 2rem;
+  }
+
+  footer .wrapper-1 p, footer .wrapper-1 a {
+    font-size: 0.85rem;
+  }
+
+  footer .wrapper-1 .footer-about img {
+    width: 4rem;
+  }
+}
+
+/* Media query for tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  footer .wrapper-1 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    padding: 2rem;
+  }
+
+  footer .wrapper-1 > * {
+    margin-bottom: 1.5rem;
+  }
+
+  footer .wrapper-1 p, footer .wrapper-1 a {
+    font-size: 0.9rem;
+  }
+
+  footer .wrapper-1 .footer-about img {
+    width: 4.5rem;
+  }
+}
