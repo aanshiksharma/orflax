@@ -3,13 +3,14 @@
 header {
   color: $text-1;
   background: $bg-header;
-  //   background: red;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(17px);
+  border-bottom: 1px solid $border;
 
   font-size: 1rem;
 
   position: fixed;
   inset: 0 0 auto 0;
+  z-index: 999;
 
   .wrapper-1 {
     display: flex;
@@ -27,7 +28,7 @@ header {
 
       a {
         text-decoration: none;
-        color: $text-2;
+        color: $text-4;
         font-size: 1rem;
 
         &:hover,

@@ -1,1 +1,148 @@
 @import "./reset";
+@import "./colors";
+
+.hero {
+  position: relative;
+  min-height: 1vw;
+  color: $text-1;
+
+  padding-inline: min(5.75em, 6.4vw);
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    // height: 100%;
+    z-index: -1;
+  }
+
+  & > div {
+    display: grid;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40rem;
+
+    .hero-text {
+      p {
+        margin-block: 2.25rem 2rem;
+        max-width: 44ch;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      gap: 1.5em;
+
+      .btn {
+        border: 1px solid $cta;
+        border-radius: 1.25em;
+        padding: 0.5em 1em;
+        background: $cta;
+        color: $text-3;
+        font-weight: 500;
+
+        &:nth-child(2) {
+          background: transparent;
+          color: $cta;
+        }
+
+        &:hover {
+          background: $cta-hover;
+          color: $text-1;
+          border-color: $cta-hover;
+        }
+      }
+    }
+  }
+}
+
+.about {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 2fr 3fr;
+  gap: 1em;
+  padding: 5em min(5.75em, 6.4vw);
+
+  .left {
+    display: grid;
+    gap: 1em;
+
+    padding: 1em;
+
+    p {
+      color: $text-2;
+    }
+  }
+
+  .right {
+    video {
+      width: 100%;
+      border-radius: 2.25em;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 1em;
+  margin-block: 2em;
+
+  overflow-x: hidden;
+
+  .card {
+    border-radius: 2.25rem;
+    background: $bg;
+    overflow: hidden;
+    min-width: 18.875rem;
+    flex: 1;
+    display: grid;
+    align-content: space-between;
+    gap: 4em;
+
+    .description {
+      padding: 1.75rem;
+      color: $text-5;
+
+      a {
+        text-decoration: none;
+        font-size: 1.75rem;
+        color: $text-5;
+
+        &:hover {
+          text-decoration: underline;
+          color: $text-1;
+        }
+      }
+    }
+
+    .image {
+      transform: translateY(0.5em);
+
+      img {
+        max-width: 17.5rem;
+        filter: drop-shadow(-1em -3em 6em $drop-shadow);
+        transition: transform 200ms ease;
+      }
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.featured {
+  padding-inline: min(5.75em, 6.4vw);
+}
+
+.industries {
+  padding-inline: min(5.75em, 6.4vw);
+}
