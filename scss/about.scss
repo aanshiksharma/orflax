@@ -1,2 +1,97 @@
 @import "./reset";
 @import "./colors";
+
+main {
+  padding: 4vh;
+}
+
+.about-us {
+  padding: 5vh 5rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+
+  h1 {
+    padding-top: 4vh;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+}
+
+.upper_column,
+.lower_column {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6vh;
+  flex-wrap: wrap;
+
+  .text {
+    width: 50%;
+    padding: 2rem;
+
+    h2 {
+      font-size: 3.4rem;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      line-height: 1.8;
+      color: #666;
+    }
+  }
+
+  .image {
+    width: 50%;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 1rem;
+    }
+  }
+}
+
+.commitment {
+  text-align: center;
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 6vh;
+
+  p {
+    font-size: 1.425rem;
+    line-height: 2rem;
+    color: #555;
+  }
+}
+
+.closing-remark {
+  text-align: center;
+  margin-top: 8vh;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+  }
+}
+
+@media (max-width: 768px) {
+  .uper_column,
+  .lower_column {
+    flex-direction: column;
+  }
+
+  .uper_column .text,
+  .lower_column .text,
+  .uper_column .image,
+  .lower_column .image {
+    width: 100%;
+    padding: 1rem;
+  }
+}
