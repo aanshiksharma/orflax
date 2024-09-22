@@ -1,0 +1,67 @@
+@import "./reset";
+
+body {
+  background: $bg-1;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: 4.5em;
+  min-height: 20em;
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+}
+
+.products {
+  padding-inline: min(5.75rem, 6.4vw);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 4.5em;
+  margin-block-end: 8em;
+
+  .product {
+    gap: 1em;
+
+    & > .flex {
+      flex-direction: column;
+      gap: 1em;
+
+      .flex {
+        gap: 1em;
+        width: 100%;
+        align-self: flex-start;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .branding {
+          justify-self: flex-end;
+        }
+      }
+    }
+
+    .scanner {
+      p {
+        text-align: center;
+        font-size: 1rem;
+
+        &:first-child {
+          font-size: 0.75em;
+        }
+      }
+    }
+
+    .sher {
+      align-self: flex-end;
+    }
+
+    &:nth-of-type(2n) {
+      flex-direction: row-reverse;
+    }
+  }
+}
