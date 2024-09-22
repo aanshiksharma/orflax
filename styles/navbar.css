@@ -30,36 +30,3 @@ header .wrapper-1 .navlist a:hover, header .wrapper-1 .navlist a.selected {
 }
 
 /*# sourceMappingURL=navbar.css.map */
-
-header {
-  color: #000000;
-  background: rgba(46, 46, 46, 0.22);
-  backdrop-filter: blur(30px);
-  font-size: 1rem;
-  position: fixed;
-  inset: 0 0 auto 0;
-}
-
-header .wrapper-1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.3em min(5.75em, 6.4vw);
-}
-
-header .wrapper-1 .navlist {
-  display: flex;
-  align-items: center;
-  gap: min(3.5em, 3.9vw);
-  list-style-type: none;
-}
-
-header .wrapper-1 .navlist a {
-  text-decoration: none;
-  color: #fffefe;
-  font-size: 1rem;
-}
-
-header .wrapper-1 .navlist a:hover, header .wrapper-1 .navlist a.selected {
-  color: #000000;
-}

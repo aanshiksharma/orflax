@@ -67,7 +67,7 @@ body {
 
 .hero {
   position: relative;
-  min-height: 40rem;
+  min-height: 1vw;
   color: #ffffff;
   padding-inline: min(5.75em, 6.4vw);
 }
@@ -75,7 +75,7 @@ body {
   position: absolute;
   inset: 0;
   width: 100%;
-  height: 40rem;
+  height: 100%;
   object-fit: cover;
   z-index: -1;
 }
