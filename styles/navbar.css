@@ -1,7 +1,7 @@
 header {
   color: #ffffff;
   background: rgba(0, 0, 0, 0.3647058824);
-  backdrop-filter: blur(17px);
+  backdrop-filter: blur(2em);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1019607843);
   font-size: 1rem;
   position: fixed;
@@ -13,6 +13,9 @@ header .wrapper-1 {
   align-items: center;
   justify-content: space-between;
   padding: 1.3em min(5.75em, 6.4vw);
+}
+header .wrapper-1 .toggleButton {
+  display: none;
 }
 header .wrapper-1 .navlist {
   display: flex;
@@ -27,6 +30,30 @@ header .wrapper-1 .navlist a {
 }
 header .wrapper-1 .navlist a:hover, header .wrapper-1 .navlist a.selected {
   color: #ffffff;
+}
+
+@media only screen and (max-width: 1100px) {
+  header .toggleButton {
+    display: block !important;
+  }
+  header .navbar {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 888;
+    transform: translateY(-100%);
+    transition: 400ms ease;
+    background: rgba(0, 0, 0, 0.3647058824);
+  }
+  header .navbar .navlist {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 2em !important;
+    padding: 2em;
+  }
+  header .navbar.visible {
+    top: 4.5em;
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=navbar.css.map */

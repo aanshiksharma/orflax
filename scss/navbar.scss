@@ -3,7 +3,8 @@
 header {
   color: $text-1;
   background: $bg-header;
-  backdrop-filter: blur(17px);
+  // backdrop-filter: blur(17px);
+  backdrop-filter: blur(2em);
   border-bottom: 1px solid $border;
 
   font-size: 1rem;
@@ -18,6 +19,10 @@ header {
     justify-content: space-between;
 
     padding: 1.3em min(5.75em, 6.4vw);
+
+    .toggleButton {
+      display: none;
+    }
 
     .navlist {
       display: flex;
@@ -35,6 +40,39 @@ header {
         &.selected {
           color: $text-1;
         }
+      }
+    }
+  }
+}
+
+// Responsiveness
+
+@media only screen and (max-width: 1100px) {
+  header {
+    .toggleButton {
+      display: block !important;
+    }
+
+    .navbar {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 888;
+      transform: translateY(-100%);
+      transition: 400ms ease;
+
+      background: $bg-header;
+
+      .navlist {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 2em !important;
+
+        padding: 2em;
+      }
+
+      &.visible {
+        top: 4.5em;
+        transform: translateY(0);
       }
     }
   }

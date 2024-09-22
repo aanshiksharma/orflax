@@ -53,6 +53,10 @@ p {
   align-content: center;
 }
 
+.display-none {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -67,35 +71,33 @@ body {
 
 .hero {
   position: relative;
-  min-height: 1vw;
+}
+.hero .wrapper-1 {
+  padding: min(50rem, 20vh) min(5.75rem, 6.4vw);
+}
+.hero .wrapper-1 .hero-text {
   color: #ffffff;
-  padding-inline: min(5.75em, 6.4vw);
+}
+.hero .wrapper-1 .hero-text p {
+  margin-block: 2.25em 2em;
+  max-width: 43ch;
 }
 .hero .hero-bg {
   position: absolute;
   inset: 0;
+  z-index: -1;
+}
+.hero .hero-bg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
 }
-.hero > div {
-  display: grid;
-  align-content: center;
-  align-items: center;
-  width: 100%;
-  height: 40rem;
-}
-.hero > div .hero-text p {
-  margin-block: 2.25rem 2rem;
-  max-width: 44ch;
-}
-.hero > div .buttons {
+.hero .buttons {
   display: flex;
   align-items: center;
   gap: 1.5em;
 }
-.hero > div .buttons .btn {
+.hero .buttons .btn {
   border: 1px solid #ffc812;
   border-radius: 1.25em;
   padding: 0.5em 1em;
@@ -103,11 +105,11 @@ body {
   color: #000000;
   font-weight: 500;
 }
-.hero > div .buttons .btn:nth-child(2) {
+.hero .buttons .btn:nth-child(2) {
   background: transparent;
   color: #ffc812;
 }
-.hero > div .buttons .btn:hover {
+.hero .buttons .btn:hover {
   background: #947100;
   color: #ffffff;
   border-color: #947100;
