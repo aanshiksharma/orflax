@@ -57,17 +57,22 @@
 }
 
 .about {
-  display: grid;
-  align-content: center;
-  grid-template-columns: 2fr 3fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 1em;
   padding: 5em min(5.75em, 6.4vw);
 
   .left {
     display: grid;
     gap: 1em;
+    flex: 2;
+    flex-basis: 400px;
 
     padding: 1em;
+
+    h4 {
+      width: fit-content;
+    }
 
     p {
       color: $text-2;
@@ -75,6 +80,8 @@
   }
 
   .right {
+    flex: 3;
+    flex-basis: 400px;
     video {
       width: 100%;
       border-radius: 2.25em;
@@ -89,7 +96,8 @@
   gap: 1em;
   margin-block: 2em;
 
-  overflow-x: hidden;
+  // Edit
+  overflow-x: scroll;
 
   .card {
     border-radius: 2.25rem;
@@ -141,4 +149,44 @@
 
 .industries {
   padding-inline: min(5.75em, 6.4vw);
+}
+
+@media only screen and (max-width: 850px) {
+  .hero {
+    .wrapper-1 {
+      .hero-text {
+        h2 {
+          font-size: 2.25rem;
+        }
+
+        h4 {
+          font-size: 1.125rem;
+        }
+
+        p {
+          font-size: 0.75rem;
+        }
+
+        .buttons {
+          font-size: 0.75rem;
+          .btn {
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    h4 {
+      font-size: 1.5rem !important;
+    }
+
+    p {
+      font-size: 0.75rem !important;
+    }
+  }
+  h3 {
+    font-size: 2.25rem !important;
+  }
 }

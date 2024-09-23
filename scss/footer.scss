@@ -32,6 +32,12 @@ footer {
       }
     }
 
+    nav {
+      p {
+        width: max-content;
+      }
+    }
+
     ul {
       list-style-type: none;
       margin-block-start: 0.5em;
@@ -58,6 +64,22 @@ footer {
 
         &:hover {
           color: $text-1;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  footer {
+    .wrapper-1 {
+      display: flex !important;
+      flex-direction: column;
+
+      .footer-about {
+        p {
+          // width: 100% !important;
+          max-width: max-content;
         }
       }
     }

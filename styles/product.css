@@ -84,6 +84,7 @@ body {
   justify-content: center;
   margin-block-start: 4.5em;
   min-height: 20em;
+  text-align: center;
 }
 .heading h1 {
   font-size: 3.5rem;
@@ -100,6 +101,8 @@ body {
 }
 .products .product {
   gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .products .product > .flex {
   flex-direction: column;
@@ -115,6 +118,12 @@ body {
 .products .product > .flex .flex .branding {
   justify-self: flex-end;
 }
+.products .product > .flex .prodcut-image {
+  width: 100%;
+}
+.products .product > .flex img {
+  width: 100%;
+}
 .products .product .scanner p {
   text-align: center;
   font-size: 1rem;
@@ -127,6 +136,25 @@ body {
 }
 .products .product:nth-of-type(2n) {
   flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 850px) {
+  h1 {
+    font-size: 2.25rem !important;
+  }
+  h4 {
+    font-size: 1.25rem !important;
+    width: max-content;
+  }
+  h5 {
+    font-size: 1rem !important;
+  }
+  .scanner p {
+    font-size: 0.75rem !important;
+  }
+  .scanner p:first-child {
+    font-size: 0.5rem !important;
+  }
 }
 
 /*# sourceMappingURL=product.css.map */

@@ -39,6 +39,11 @@ h4 {
   font-weight: 600;
 }
 
+h5 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
 p {
   font-size: 1.25rem;
 }
@@ -67,13 +72,10 @@ p {
 body {
   line-height: 1.36;
   font-family: "Open Sans", Inter, Roboto, sans-serif;
-  overflow-x: hidden;
 }
 
 .hero {
   position: relative;
-  height: 100vh;
-  width: 100%;
 }
 .hero .wrapper-1 {
   padding: min(50rem, 20vh) min(5.75rem, 6.4vw);
@@ -119,19 +121,27 @@ body {
 }
 
 .about {
-  display: grid;
-  align-content: center;
-  grid-template-columns: 2fr 3fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 1em;
   padding: 5em min(5.75em, 6.4vw);
 }
 .about .left {
   display: grid;
   gap: 1em;
+  flex: 2;
+  flex-basis: 400px;
   padding: 1em;
+}
+.about .left h4 {
+  width: fit-content;
 }
 .about .left p {
   color: #6c6c6d;
+}
+.about .right {
+  flex: 3;
+  flex-basis: 400px;
 }
 .about .right video {
   width: 100%;
@@ -144,16 +154,8 @@ body {
   flex-wrap: nowrap;
   gap: 1em;
   margin-block: 2em;
+  overflow-x: scroll;
 }
-
-.featured {
-  margin-bottom: 10vh;
-}
-
-.industries {
-  margin-bottom: 8vh;
-}
-
 .container .card {
   border-radius: 2.25rem;
   background: #000000;
@@ -163,14 +165,11 @@ body {
   display: grid;
   align-content: space-between;
   gap: 4em;
-  height: 33rem;
 }
-
 .container .card .description {
   padding: 1.75rem;
   color: #f5f5f7;
 }
-
 .container .card .description a {
   text-decoration: none;
   font-size: 1.75rem;
@@ -188,7 +187,6 @@ body {
   filter: drop-shadow(-1em -3em 6em #f5c401);
   transition: transform 200ms ease;
 }
-
 .container .card:hover img {
   transform: scale(1.1);
 }
@@ -201,9 +199,31 @@ body {
   padding-inline: min(5.75em, 6.4vw);
 }
 
-.container .card .img img {
-  filter: drop-shadow(-1em -3em 6em #3f3d3d);
-  transition: transform 200ms ease;
-  margin-top: -20vh;
-  object-fit: cover;
+@media only screen and (max-width: 850px) {
+  .hero .wrapper-1 .hero-text h2 {
+    font-size: 2.25rem;
+  }
+  .hero .wrapper-1 .hero-text h4 {
+    font-size: 1.125rem;
+  }
+  .hero .wrapper-1 .hero-text p {
+    font-size: 0.75rem;
+  }
+  .hero .wrapper-1 .hero-text .buttons {
+    font-size: 0.75rem;
+  }
+  .hero .wrapper-1 .hero-text .buttons .btn {
+    font-size: 0.75rem;
+  }
+  .about h4 {
+    font-size: 1.5rem !important;
+  }
+  .about p {
+    font-size: 0.75rem !important;
+  }
+  h3 {
+    font-size: 2.25rem !important;
+  }
 }
+
+/*# sourceMappingURL=home.css.map */
