@@ -164,5 +164,68 @@ main {
     padding: 1rem;
   }
 }
+@media (max-width: 1200px) {
+  .about-us {
+    padding: 5vh 3rem;
+  }
+  .upper_column .text,
+  .lower_column .text {
+    padding: 1.5rem;
+  }
+  .upper_column .image,
+  .lower_column .image {
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 992px) {
+  .about-us {
+    padding: 5vh 2rem;
+  }
+  .upper_column .text,
+  .lower_column .text {
+    padding: 1rem;
+  }
+  .upper_column .image,
+  .lower_column .image {
+    padding: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    padding: 2vh;
+  }
+  .upper_column,
+  .lower_column {
+    flex-direction: column;
+  }
+  .upper_column .text,
+  .lower_column .text,
+  .upper_column .image,
+  .lower_column .image {
+    width: 100%;
+    padding: 1rem;
+  }
+  .commitment {
+    padding: 2rem;
+  }
+  .closing-remark {
+    margin-top: 4vh;
+  }
+}
+@media (max-width: 480px) {
+  .about-us h1 {
+    font-size: 3rem;
+  }
+  .upper_column .text h2,
+  .lower_column .text h2 {
+    font-size: 2.5rem;
+  }
+  .commitment p {
+    font-size: 1.2rem;
+  }
+  .closing-remark h2 {
+    font-size: 2rem;
+  }
+}
 
 /*# sourceMappingURL=about.css.map */

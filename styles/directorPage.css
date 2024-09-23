@@ -76,6 +76,14 @@ main {
 
   .message-text,
   .director-images {
-    max-width: 90%;
+    max-width: 100%;
+  }
+
+  .message-wrapper1 span h2 {
+    font-size: 5vh;
+  }
+
+  .message-text {
+    font-size: 1.8vh;
   }
 }
