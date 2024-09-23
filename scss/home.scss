@@ -96,9 +96,6 @@
   gap: 1em;
   margin-block: 2em;
 
-  // Edit
-  overflow-x: scroll;
-
   .card {
     border-radius: 2.25rem;
     background: $bg;
@@ -188,5 +185,9 @@
   }
   h3 {
     font-size: 2.25rem !important;
+  }
+
+  .container {
+    overflow-x: scroll;
   }
 }

@@ -154,7 +154,6 @@ body {
   flex-wrap: nowrap;
   gap: 1em;
   margin-block: 2em;
-  overflow-x: scroll;
 }
 .container .card {
   border-radius: 2.25rem;
@@ -223,6 +222,9 @@ body {
   }
   h3 {
     font-size: 2.25rem !important;
+  }
+  .container {
+    overflow-x: scroll;
   }
 }
 
