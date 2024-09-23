@@ -35,15 +35,17 @@ main {
 }
 
 .message-wrapper1 span {
-  white-space: nowrap;
   color: #000000;
-  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .message-wrapper1 span h2 {
   font-size: 9vh;
   font-weight: 500;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
+  white-space: nowrap;
 }
 
 .message-wrapper1 p {
@@ -54,17 +56,17 @@ main {
   font-size: 2.7vh;
   color: #505050;
   padding: 1.5rem;
-  width: 40rem;
+  width: 75rem;
 }
 
 .director-images {
-  width: 85vh;
-  height: 85vh;
+  width: 100%;
+  height: auto;
 }
 
 .director-images img {
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 0.5rem;
 }
 

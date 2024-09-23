@@ -42,7 +42,7 @@ header .wrapper-1 .navlist a:hover, header .wrapper-1 .navlist a.selected {
     z-index: 888;
     transform: translateY(-100%);
     transition: 400ms ease;
-    background: rgba(0, 0, 0, 0.3647058824);
+    background: #000000;
   }
   header .navbar .navlist {
     flex-direction: column;
