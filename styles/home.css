@@ -72,6 +72,7 @@ p {
 body {
   line-height: 1.36;
   font-family: "Open Sans", Inter, Roboto, sans-serif;
+  overflow-x: hidden;
 }
 
 .hero {

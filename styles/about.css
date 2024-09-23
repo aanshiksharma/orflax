@@ -72,6 +72,7 @@ p {
 body {
   line-height: 1.36;
   font-family: "Open Sans", Inter, Roboto, sans-serif;
+  overflow-x: hidden;
 }
 
 main {
@@ -151,8 +152,19 @@ main {
   color: #000;
 }
 
-/* Media Queries */
-
+@media (max-width: 768px) {
+  .uper_column,
+  .lower_column {
+    flex-direction: column;
+  }
+  .uper_column .text,
+  .lower_column .text,
+  .uper_column .image,
+  .lower_column .image {
+    width: 100%;
+    padding: 1rem;
+  }
+}
 @media (max-width: 1200px) {
   .about-us {
     padding: 5vh 3rem;
@@ -166,7 +178,6 @@ main {
     padding: 1.5rem;
   }
 }
-
 @media (max-width: 992px) {
   .about-us {
     padding: 5vh 2rem;
@@ -180,12 +191,10 @@ main {
     padding: 1rem;
   }
 }
-
 @media (max-width: 768px) {
   main {
     padding: 2vh;
   }
-
   .upper_column,
   .lower_column {
     flex-direction: column;
@@ -204,7 +213,6 @@ main {
     margin-top: 4vh;
   }
 }
-
 @media (max-width: 480px) {
   .about-us h1 {
     font-size: 3rem;
@@ -220,3 +228,5 @@ main {
     font-size: 2rem;
   }
 }
+
+/*# sourceMappingURL=about.css.map */
