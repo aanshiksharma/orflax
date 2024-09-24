@@ -13,3 +13,31 @@ body {
   font-family: "Open Sans", Inter, Roboto, sans-serif;
   overflow-x: hidden;
 }
+
+.floating-buttons {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 999;
+
+  a {
+    font-size: 1.5rem;
+    width: 2em;
+    height: 2em;
+    background: $bg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    color: $cta;
+    transition: 200ms ease;
+
+    &:hover{
+      transform: scale(1.15);
+    }
+  }
+}

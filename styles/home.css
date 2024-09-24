@@ -75,15 +75,42 @@ body {
   overflow-x: hidden;
 }
 
+.floating-buttons {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 999;
+}
+.floating-buttons a {
+  font-size: 1.5rem;
+  width: 2em;
+  height: 2em;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #ffc812;
+  transition: 200ms ease;
+}
+.floating-buttons a:hover {
+  transform: scale(1.15);
+}
+
 .hero {
   position: relative;
-  min-height: 100vh;
+  width: 100vw;
 }
 .hero .wrapper-1 {
-  padding: min(50rem, 20vh) min(5.75rem, 6.4vw);
+  padding: min(54.5em, 20vh) min(5.75rem, 6.4vw) min(50em, 20vh) min(5.75rem, 6.4vw);
 }
 .hero .wrapper-1 .hero-text {
   color: #ffffff;
+  height: 100%;
 }
 .hero .wrapper-1 .hero-text p {
   margin-block: 2.25em 2em;
@@ -200,6 +227,11 @@ body {
   padding-inline: min(5.75em, 6.4vw);
 }
 
+@media only screen and (min-width: 850px) {
+  .hero {
+    min-height: 100vh;
+  }
+}
 @media only screen and (max-width: 850px) {
   .hero .wrapper-1 .hero-text h2 {
     font-size: 2.25rem;
