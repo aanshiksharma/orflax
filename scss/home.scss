@@ -6,12 +6,12 @@
   width: 100vw;
 
   .wrapper-1 {
-    padding: min(54.5em, 20vh) min(5.75rem, 6.4vw) min(50em, 20vh) min(5.75rem, 6.4vw);
-    
+    padding: min(54.5em, 20vh) min(5.75rem, 6.4vw) min(50em, 20vh)
+      min(5.75rem, 6.4vw);
+
     .hero-text {
       color: $text-1;
       height: 100%;
-      
 
       p {
         margin-block: 2.25em 2em;
@@ -92,69 +92,59 @@
   }
 }
 
-.container {
-  display: flex;
-  align-items: stretch;
-  flex-wrap: nowrap;
-  gap: 1em;
-  margin-block: 2em;
+.featured,
+.industries {
+  .container {
+    display: flex;
+    // align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 1em;
+    margin-block: 2em;
 
-  // overflow-x: hidden;
+    // overflow-x: hidden;
 
-  .card {
-    border-radius: 2.25rem;
-    background: $bg;
-    overflow: hidden;
-    min-width: 18.875rem;
-    flex: 1;
-    display: grid;
-    align-content: space-between;
-    gap: 4em;
+    .card {
+      border-radius: 2.25rem;
+      background: $bg;
+      overflow: hidden;
+      min-width: 18.875rem;
+      flex: 1;
+      display: grid;
+      align-content: space-between;
+      transition: transform 200ms ease;
 
-    .description {
-      padding: 1.75rem;
-      color: $text-5;
-
-      a {
-        text-decoration: none;
-        font-size: 1.75rem;
+      .description {
+        padding: 1.75rem;
         color: $text-5;
 
-        &:hover {
-          text-decoration: underline;
-          color: $text-1;
+        a {
+          text-decoration: none;
+          font-size: 1.75rem;
+          color: $text-5;
         }
       }
-    }
 
-    .image {
-      transform: translateY(0.5em);
+      .image {
+        transform: translateY(0.5em);
 
-      img {
-        max-width: 17.5rem;
-        filter: drop-shadow(-1em -3em 6em $drop-shadow);
-        transition: transform 200ms ease;
+        img {
+          max-width: 17.5rem;
+          filter: drop-shadow(-1em -3em 6em $drop-shadow);
+        }
       }
-    }
 
-    &:hover {
-      img {
-        transform: scale(1.1);
+      &:hover {
+          transform: scale(1.025);
       }
     }
   }
-}
 
-.featured {
   padding-inline: min(5.75em, 6.4vw);
+  margin-block: 2em;
 }
 
-.industries {
-  padding-inline: min(5.75em, 6.4vw);
-}
-
-@media only screen and (min-width: 850px){
-  .hero{
+@media only screen and (min-width: 850px) {
+  .hero {
     min-height: 100vh;
   }
 }

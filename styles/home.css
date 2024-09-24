@@ -177,14 +177,20 @@ body {
   border-radius: 2.25em;
 }
 
-.container {
+.featured,
+.industries {
+  padding-inline: min(5.75em, 6.4vw);
+  margin-block: 2em;
+}
+.featured .container,
+.industries .container {
   display: flex;
-  align-items: stretch;
   flex-wrap: nowrap;
   gap: 1em;
   margin-block: 2em;
 }
-.container .card {
+.featured .container .card,
+.industries .container .card {
   border-radius: 2.25rem;
   background: #000000;
   overflow: hidden;
@@ -192,39 +198,31 @@ body {
   flex: 1;
   display: grid;
   align-content: space-between;
-  gap: 4em;
+  transition: transform 200ms ease;
 }
-.container .card .description {
+.featured .container .card .description,
+.industries .container .card .description {
   padding: 1.75rem;
   color: #f5f5f7;
 }
-.container .card .description a {
+.featured .container .card .description a,
+.industries .container .card .description a {
   text-decoration: none;
   font-size: 1.75rem;
   color: #f5f5f7;
 }
-.container .card .description a:hover {
-  text-decoration: underline;
-  color: #ffffff;
-}
-.container .card .image {
+.featured .container .card .image,
+.industries .container .card .image {
   transform: translateY(0.5em);
 }
-.container .card .image img {
+.featured .container .card .image img,
+.industries .container .card .image img {
   max-width: 17.5rem;
   filter: drop-shadow(-1em -3em 6em #f5c401);
-  transition: transform 200ms ease;
 }
-.container .card:hover img {
-  transform: scale(1.1);
-}
-
-.featured {
-  padding-inline: min(5.75em, 6.4vw);
-}
-
-.industries {
-  padding-inline: min(5.75em, 6.4vw);
+.featured .container .card:hover,
+.industries .container .card:hover {
+  transform: scale(1.025);
 }
 
 @media only screen and (min-width: 850px) {
